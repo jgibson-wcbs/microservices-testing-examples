@@ -89,6 +89,7 @@ public abstract class IntegrationTestBase {
     await().atMost(Duration.ofSeconds(5))
         .until(() -> kafkaConsumerOffsets.readOffset(topic), equalTo(previousOffset + 1));
   }
+
   protected String generateRandomMessageSubject() {
     // Generates randomness in the test
     // Allows for failures so that we can validate observability.

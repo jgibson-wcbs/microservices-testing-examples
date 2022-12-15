@@ -19,7 +19,8 @@ public class WelcomeEmailConsumerIT extends IntegrationTestBase {
     assertAnEmailWasSent();
     WiserMessage emailSent = getLastSentEmail();
     assertThat(emailSent.getEnvelopeReceiver(), equalTo(email));
-    assertThat(emailSent.getMimeMessage().getSubject(), equalTo(generateRandomMessageSubject()));  }
+    assertThat(emailSent.getMimeMessage().getSubject(), equalTo(generateRandomMessageSubject()));  
+  }
 
   @Test
   public void ignoreMemberSignedUpEventWithBadProperties() throws Exception {
