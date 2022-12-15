@@ -98,7 +98,7 @@ public abstract class IntegrationTestBase {
       "Welcome!",
       "Welcome!",
       "Welcome!",
-      "Wrong",
+      "Welcome!",
     };
 
     return givenList[new Random().nextInt(givenList.length)];
